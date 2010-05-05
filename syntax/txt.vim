@@ -18,6 +18,7 @@ syn match txtQuestion /?.*/
 syn match txtDependency /\[.*]\(\s\)/
 syn match txtPositive /+\w.*/
 syn match txtNegative /$.*/
+syn match txtCommand /$\s.*/
 syn match txtDone /-Done:.*/
 syn match txtSkip /-Skip:.*/
 syn match txtBookmark /^\s*\*[^\*]*$/
@@ -31,6 +32,7 @@ hi def link txtQuestion Preproc
 hi def link txtDependency Keyword
 hi def link txtPositive Special
 hi def link txtNegative Exception
+hi def link txtCommand Type
 hi def link txtDone Type
 hi def link txtSkip Type
 hi def link txtBookmark Error
