@@ -14,6 +14,9 @@ syn match txtSection1 /^\*.*\*/
 syn match txtSection2 /\[.*]\n/
 syn match txtSubsection /^=.*/
 syn match txtComment /#.*/
+syn match txtH1 /#\s.*\s#/
+syn match txtH2 /##\s.*\s##/
+syn match txtH3 /###\s.*\s###/
 syn match txtQuestion /?.*/
 syn match txtDependency /\[.*]\(\s\)/
 syn match txtPositive /+\w.*/
@@ -28,6 +31,9 @@ hi def link txtSection1 String
 hi def link txtSection2 String
 hi def link txtSubsection Constant
 hi def link txtComment Comment
+hi def link txtH1 String
+hi def link txtH2 Constant
+hi def link txtH3 Preproc
 hi def link txtQuestion Preproc
 hi def link txtDependency Keyword
 hi def link txtPositive Special
