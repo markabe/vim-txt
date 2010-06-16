@@ -31,9 +31,9 @@ hi def link txtSection1 String
 hi def link txtSection2 String
 hi def link txtSubsection Constant
 hi def link txtComment Comment
-hi def link txtH1 String
-hi def link txtH2 Constant
-hi def link txtH3 Preproc
+hi def link txtH1 Identifier
+hi def link txtH2 String
+hi def link txtH3 Constant
 hi def link txtQuestion Preproc
 hi def link txtDependency Keyword
 hi def link txtPositive Special
