@@ -21,6 +21,7 @@ syn match txtQuestion /?.*/
 syn match txtDependency /\[.*]\(\s\)/
 syn match txtPositive /+\w.*/
 syn match txtNegative /$.*/
+syn match txtTodo /^.[T|t]odo./
 syn match txtCommand /$\s.*/
 syn match txtDone /-Done:.*/
 syn match txtSkip /-Skip:.*/
@@ -37,6 +38,7 @@ hi def link txtH3 Constant
 hi def link txtQuestion Preproc
 hi def link txtDependency Keyword
 hi def link txtPositive Special
+hi def link txtTodo Todo
 hi def link txtNegative Exception
 hi def link txtCommand Type
 hi def link txtDone Type
