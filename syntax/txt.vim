@@ -25,7 +25,6 @@ syn match txtTodo /^.[T|t]odo./
 syn match txtCommand /$\s.*/
 syn match txtDone /-Done:.*/
 syn match txtSkip /-Skip:.*/
-syn match txtBookmark /^\s*\*[^\*]*$/
 
 hi def link txtTitle Identifier
 hi def link txtSection1 String
@@ -43,6 +42,5 @@ hi def link txtNegative Exception
 hi def link txtCommand Type
 hi def link txtDone Type
 hi def link txtSkip Type
-hi def link txtBookmark Error
 
 let b:current_syntax="txt"
