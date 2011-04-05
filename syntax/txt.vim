@@ -26,21 +26,21 @@ syn match txtCommand /$\s.*/
 syn match txtDone /-Done:.*/
 syn match txtSkip /-Skip:.*/
 
-hi def link txtTitle Identifier
-hi def link txtSection1 String
-hi def link txtSection2 String
-hi def link txtSubsection Constant
+hi def link txtTitle Type
+hi def link txtSection1 Identifier
+hi def link txtSection2 Identifier
+hi def link txtSubsection Underlined
 hi def link txtComment Comment
-hi def link txtH1 Identifier
-hi def link txtH2 String
+hi def link txtH1 Type
+hi def link txtH2 Identifier
 hi def link txtH3 Constant
-hi def link txtQuestion Preproc
-hi def link txtDependency Keyword
-hi def link txtPositive Special
+hi def link txtQuestion Constant
+hi def link txtDependency Include
+hi def link txtPositive Keyword
 hi def link txtTodo Todo
-hi def link txtNegative Exception
-hi def link txtCommand Type
-hi def link txtDone Type
-hi def link txtSkip Type
+hi def link txtNegative Special
+hi def link txtCommand Comment
+hi def link txtDone Comment
+hi def link txtSkip Comment
 
 let b:current_syntax="txt"
