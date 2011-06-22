@@ -13,7 +13,7 @@ syn match txtTitle /^++.*/
 syn match txtSection1 /^\*.*\*/
 syn match txtSection2 /\[.*]\n/
 syn match txtSubsection /^=.*/
-syn match txtProject /[\s-]\?[a-zA-Z]*=/
+syn match txtProject /[a-zA-Z]*=/
 syn match txtComment /#.*/
 syn match txtH1 /#\s.*\s#/
 syn match txtH2 /##\s.*\s##/
