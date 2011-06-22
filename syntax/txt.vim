@@ -13,12 +13,13 @@ syn match txtTitle /^++.*/
 syn match txtSection1 /^\*.*\*/
 syn match txtSection2 /\[.*]\n/
 syn match txtSubsection /^=.*/
+syn match txtProject /[\s-]\?[a-zA-Z]*=/
 syn match txtComment /#.*/
 syn match txtH1 /#\s.*\s#/
 syn match txtH2 /##\s.*\s##/
 syn match txtH3 /###\s.*\s###/
 syn match txtQuestion /?.*/
-syn match txtDependency /\[.*]\(\s\)/
+syn match txtDependency /\[.*]\s/
 syn match txtPositive /+\w.*/
 syn match txtNegative /$.*/
 syn match txtTodo /^.[T|t]odo./
@@ -30,6 +31,7 @@ hi def link txtTitle Type
 hi def link txtSection1 Identifier
 hi def link txtSection2 Identifier
 hi def link txtSubsection Underlined
+hi def link txtProject Underlined
 hi def link txtComment Comment
 hi def link txtH1 Type
 hi def link txtH2 Identifier
