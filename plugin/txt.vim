@@ -8,4 +8,4 @@ iab d: Done: <Esc>ddk}P{jj
 iab s: Skip: <Esc>ddk}P{jj
 
 " Command to set syntax to txt manually.
-command Txt set syntax=txt
+command! Txt set syntax=txt
