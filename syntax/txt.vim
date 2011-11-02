@@ -26,7 +26,7 @@ syn match txtTodo /^.[T|t]odo./
 syn match txtCommand /$\s.*/
 syn match txtDone /-Done:.*/
 syn match txtSkip /-Skip:.*/
-syn match txtMiss /-Skip:.*/
+syn match txtMiss /-Miss:.*/
 
 hi def link txtTitle Type
 hi def link txtSection1 Identifier
@@ -45,5 +45,6 @@ hi def link txtNegative Special
 hi def link txtCommand Comment
 hi def link txtDone Comment
 hi def link txtSkip Comment
+hi def link txtMiss Comment
 
 let b:current_syntax="txt"
