@@ -26,6 +26,7 @@ syn match txtTodo /^.[T|t]odo./
 syn match txtCommand /$\s.*/
 syn match txtDone /-Done:.*/
 syn match txtSkip /-Skip:.*/
+syn match txtMiss /-Skip:.*/
 
 hi def link txtTitle Type
 hi def link txtSection1 Identifier
